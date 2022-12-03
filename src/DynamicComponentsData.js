@@ -1,7 +1,37 @@
-// import img1 from "../assets/vitm.jpg";
-// import img2 from "../assets/lotd.webp";
-// import img3 from "../assets/lbbg.jpg";
-// import img4 from "../assets/wonderland.png";
+// import { ethers } from "ethers";
+// import fluidPay_abi from "./artifacts/fluidpay.json";
+// import { useEffect } from "react";
+// import React from "react";
+// const CONTRACT_ADDRESS = "0x6Af9B5173136696273F2985401589C20D0fa5967";
+
+// const getPlatformDetails = async () => {
+//   console.log("getting");
+//   if (typeof window.ethereum !== "undefined") {
+//     const provider = new ethers.providers.Web3Provider(window.ethereum);
+//     await provider.send("eth_requestAccounts", []);
+//     const signer = provider.getSigner();
+//     console.log("inside id");
+//     console.log(fluidPay_abi);
+
+//     const connectedContract = new ethers.Contract(
+//       CONTRACT_ADDRESS,
+//       fluidPay_abi,
+//       signer
+//     );
+//     console.log("wait...");
+//     let tx = await connectedContract.addressToPlatform(
+//       "0xbFc4A28D8F1003Bec33f4Fdb7024ad6ad1605AA8"
+//     );
+//     console.log(tx);
+//   }
+// };
+
+// function DynamicComponentsData() {
+//   useEffect(() => {
+//     getPlatformDetails();
+//   }, []);
+//   return <></>;
+// }
 
 let orgs = [
   {
