@@ -8,6 +8,9 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import Home from "./pages/Home";
 import SinglePage from "./pages/SinglePage";
+import Vitm from "./pages/Vitm";
+import Lotd from "./pages/Lotd";
+import Lbg from "./pages/Lgb";
 
 function App() {
   const { chains, provider } = configureChains(
@@ -39,8 +42,15 @@ function App() {
           <Router>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route
+                path="/visvesvaraya-industrial-and-technological-museum"
+                element={<Vitm />}
+              />
+              <Route path="/lord-of-the-drinks" element={<Lotd />} />
+              <Route path="/lalbagh-botanical-garden" element={<Lbg />} />
+              <Route path="/wonderla-amusement-park" element={<Home />} />
 
-              {orgs.map((item, key) => {
+              {/* {orgs.map((item, key) => {
                 return (
                   <Route
                     exact
@@ -56,7 +66,7 @@ function App() {
                     }
                   />
                 );
-              })}
+              })} */}
             </Routes>
           </Router>
         </div>

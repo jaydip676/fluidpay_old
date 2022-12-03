@@ -70,7 +70,7 @@ let orgs = [
     address: "Kochi, Hyderabad, Bengaluru",
     charges: 10,
     image: "/images/wonderland.png",
-    route: "/",
+    route: "/wonderla-amusement-park",
   },
 ];
 
