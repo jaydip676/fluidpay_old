@@ -47,7 +47,7 @@ function App() {
           </div>
           <HashRouter hashType="slash">
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" exact element={<Home />} />
               <Route
                 path="/visvesvaraya-industrial-and-technological-museum"
                 element={<Vitm />}
