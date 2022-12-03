@@ -1,0 +1,44 @@
+.single-orgs-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+
+  h1 {
+    font-size: 25px;
+  }
+  img.orgs-image {
+    width: 80%;
+    border-radius: 1rem;
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  .orgs-details {
+    p.orgs-desc {
+      text-align: justify;
+    }
+  }
+  .orgs-last-section {
+    position: relative;
+
+    img.background-image {
+      //   position: absolute;
+      //   right: -10%;
+      //   left: -10%;
+      width: 100%;
+      //   max-width: 120%;
+      //   border-radius: 1rem;
+      //   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+    img.ethlogo-image {
+      position: absolute;
+      /* right: auto; */
+      /* margin: auto; */
+      bottom: 20%;
+      width: 12%;
+      z-index: 5;
+      right: 42.7%;
+    }
+  }
+}
