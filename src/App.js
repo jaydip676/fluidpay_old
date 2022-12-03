@@ -1,18 +1,12 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  HashRouter,
-} from "react-router-dom";
-import orgs from "./DynamicComponentsData";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import Home from "./pages/Home";
-import SinglePage from "./pages/SinglePage";
+
 import Vitm from "./pages/Vitm";
 import Lotd from "./pages/Lotd";
 import Lbg from "./pages/Lgb";
