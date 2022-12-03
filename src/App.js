@@ -11,6 +11,7 @@ import SinglePage from "./pages/SinglePage";
 import Vitm from "./pages/Vitm";
 import Lotd from "./pages/Lotd";
 import Lbg from "./pages/Lgb";
+import Wap from "./pages/Wap";
 
 function App() {
   const { chains, provider } = configureChains(
@@ -48,7 +49,7 @@ function App() {
               />
               <Route path="/lord-of-the-drinks" element={<Lotd />} />
               <Route path="/lalbagh-botanical-garden" element={<Lbg />} />
-              <Route path="/wonderla-amusement-park" element={<Home />} />
+              <Route path="/wonderla-amusement-park" element={<Wap />} />
 
               {/* {orgs.map((item, key) => {
                 return (
