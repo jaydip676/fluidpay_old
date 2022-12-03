@@ -40,7 +40,9 @@ h2.heading {
         border-radius: 1rem;
         position: absolute;
         top: -75px;
-        box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 70px 4px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+          rgba(17, 17, 26, 0.1) 0px 16px 56px,
+          rgba(17, 17, 26, 0.1) 0px 24px 80px;
       }
       .card-title-div {
         width: 100%;
@@ -85,4 +87,15 @@ h2.heading {
       }
     }
   }
+}
+
+button.paynow {
+  margin: auto;
+  background-color: #ff3494;
+  color: white;
+  border: 1px solid #ff3494;
+  padding: 15px 35px;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }

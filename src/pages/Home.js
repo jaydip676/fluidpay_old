@@ -40,6 +40,11 @@ function Home() {
             </div>
           );
         })}
+
+        <div className="footer">
+          <hr />
+          <h2>Hacked at ETHIndia by Jaydip & Sarvagna</h2>
+        </div>
       </div>
     </>
   );

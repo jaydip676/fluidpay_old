@@ -20,8 +20,10 @@ function Vitm() {
         <h4>Description</h4>
         <p className="orgs-desc">{org[0].description}</p>
         <h4>
-          Charges - <span className="orgs-charges">{org[0].charges}</span>
+          Charges - <span className="orgs-charges">{org[0].charges}</span> DAIx
+          / sec
         </h4>
+        <button className="paynow">Pay Now</button>
       </div>
       {/* <div className="orgs-qr-code">
         <img src="" alt="qr-code" />

@@ -20,8 +20,10 @@ function Lotd() {
         <h4>Description</h4>
         <p className="orgs-desc">{orgs[1].description}</p>
         <h4>
-          Charges - <span className="orgs-charges">{orgs[1].charges}</span>
+          Charges - <span className="orgs-charges">{orgs[1].charges}</span> DAIx
+          / sec
         </h4>
+        <button className="paynow">Pay Now</button>
       </div>
       {/* <div className="orgs-qr-code">
         <img src="" alt="qr-code" />
