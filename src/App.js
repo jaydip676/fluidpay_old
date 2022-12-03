@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  HashRouter,
+} from "react-router-dom";
 import orgs from "./DynamicComponentsData";
 
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
@@ -40,7 +45,7 @@ function App() {
           <div className="logo-div">
             <h1 className="logo-h1">FLUIDPAY</h1>
           </div>
-          <Router>
+          <HashRouter hashType="slash">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route
@@ -69,7 +74,7 @@ function App() {
                 );
               })} */}
             </Routes>
-          </Router>
+          </HashRouter>
         </div>
       </RainbowKitProvider>
     </WagmiConfig>
