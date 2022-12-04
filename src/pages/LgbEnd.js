@@ -8,7 +8,6 @@ function LbgEnd() {
   const CONTRACT_ADDRESS = "0x25f4e7912eDbA1C47C63B6BA4Ac14Eb7dB876954";
   const [streamDuration, setDuration] = useState("");
   const dataFetchedRef = useRef(false);
-
   const [data, setData] = useState("Ending your stream...");
 
   useEffect(() => {
@@ -71,8 +70,6 @@ function LbgEnd() {
       <hr />
       <div className="orgs-name">
         <h1>{data}</h1>
-        {/* <button onClick={timeBeenStreamed}>show time</button> */}
-        {/* <h2> {streamDuration}</h2> */}
       </div>
       <hr />
       {streamDuration ? <h2>{parseInt(streamDuration._hex)} seconds</h2> : null}
