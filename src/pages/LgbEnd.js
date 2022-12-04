@@ -75,7 +75,10 @@ function LbgEnd() {
         {/* <h2> {streamDuration}</h2> */}
       </div>
       <hr />
-      {streamDuration ? <h2>{streamDuration._hex}</h2> : null}
+      {streamDuration ? <h2>{parseInt(streamDuration._hex)} seconds</h2> : null}
+      {streamDuration ? (
+        <h2>{parseInt(streamDuration._hex) * 0.00001} DAIx transfered</h2>
+      ) : null}
     </div>
   );
 }
