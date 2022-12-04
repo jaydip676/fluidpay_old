@@ -7,7 +7,7 @@ function Home() {
   const navigate = useNavigate();
   return (
     <>
-      <h2 className="heading">Available</h2>
+      <h2 className="heading">Available Platforms</h2>
       <div className="card-main">
         {orgs.map((item, key) => {
           return (
@@ -34,16 +34,19 @@ function Home() {
                   <p>{item.description}</p>
                 </div>
                 <p className="card-charges">
-                  Charges - <span>10</span>
+                  Charges - <span>0.000001</span> DAIx / sec
                 </p>
               </div>
             </div>
           );
         })}
-
+        <div className="steps">
+          <h2>Test Instructions</h2>
+          div
+        </div>
         <div className="footer">
           <hr />
-          <h2>Hacked at ETHIndia by Jaydip & Sarvagna</h2>
+          <h2>Hacked at ETHIndia</h2>
         </div>
       </div>
     </>
