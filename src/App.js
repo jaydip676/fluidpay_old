@@ -9,8 +9,13 @@ import Home from "./pages/Home";
 
 import Vitm from "./pages/Vitm";
 import Lotd from "./pages/Lotd";
-import Lbg from "./pages/Lgb";
+import Lgb from "./pages/Lgb";
 import Wap from "./pages/Wap";
+import logo from "../src/assets/fluid-pay-logo.png";
+import LgbEnd from "./pages/LgbEnd";
+import VitmEnd from "./pages/VitmEnd";
+import LotdEnd from "./pages/LotdEnd";
+import WapEnd from "./pages/WapEnd";
 
 function App() {
   const { chains, provider } = configureChains(
@@ -37,8 +42,10 @@ function App() {
       <RainbowKitProvider chains={chains}>
         <div className="App">
           <div className="logo-div">
-            <h1 className="logo-h1">FLUIDPAY</h1>
+            {/* <h1 className="logo-h1">FLUIDPAY</h1> */}
+            <img className="logo" src={logo} alt="logo" />
           </div>
+          <hr />
           <HashRouter hashType="slash">
             <Routes>
               <Route path="/" exact element={<Home />} />
@@ -46,9 +53,28 @@ function App() {
                 path="/visvesvaraya-industrial-and-technological-museum"
                 element={<Vitm />}
               />
+              <Route
+                path="/visvesvaraya-industrial-and-technological-museum/stream-end"
+                element={<VitmEnd />}
+              />
               <Route path="/lord-of-the-drinks" element={<Lotd />} />
-              <Route path="/lalbagh-botanical-garden" element={<Lbg />} />
+              <Route
+                path="/lord-of-the-drinks/stream-end"
+                element={<LotdEnd />}
+              />
+
+              <Route path="/lalbagh-botanical-garden" element={<Lgb />} />
+
+              <Route
+                path="/lalbagh-botanical-garden/stream-end"
+                element={<LgbEnd />}
+              />
               <Route path="/wonderla-amusement-park" element={<Wap />} />
+
+              <Route
+                path="/wonderla-amusement-park/stream-end"
+                element={<WapEnd />}
+              />
 
               {/* {orgs.map((item, key) => {
                 return (
