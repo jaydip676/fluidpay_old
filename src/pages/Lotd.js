@@ -43,7 +43,7 @@ function Lotd() {
       <div className="orgs-details">
         <h4>Address</h4>
         <p className="orgs-address">{orgs[1].address}</p>
-        <h4>Description</h4>
+        <h4>deps</h4>
         <p className="orgs-desc">{orgs[1].description}</p>
         <h4>
           Charges - <span className="orgs-charges">{orgs[1].charges}</span> DAIx

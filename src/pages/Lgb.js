@@ -1,4 +1,6 @@
 import React from "react";
+import { ethers } from "ethers";
+import quickPay_abi from "../artifacts/fluidpay.json";
 import "../styles/single.scss";
 import background from "../assets/hero.webp";
 import ethlogo from "../assets/eth-logo.webp";
