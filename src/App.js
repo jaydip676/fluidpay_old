@@ -19,7 +19,7 @@ import WapEnd from "./pages/WapEnd";
 
 function App() {
   const { chains, provider } = configureChains(
-    [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
+    [chain.goerli, chain.polygonMumbai],
     [
       alchemyProvider({ apiKey: process.env.REACT_APP_ALCHEMY_ID }),
       publicProvider(),

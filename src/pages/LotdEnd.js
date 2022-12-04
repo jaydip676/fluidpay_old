@@ -30,7 +30,9 @@ function LotdEnd() {
         signer
       );
       console.log("wait...");
-      let tx = await connectedContract.deleteStream(user, platform);
+      let tx = await connectedContract.deleteStream(user, platform, {
+        gasLimit: 500000,
+      });
       console.log(tx);
       setData("Your stream is ended. Have a nice day");
     }
