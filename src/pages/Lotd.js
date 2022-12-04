@@ -59,7 +59,7 @@ function Lotd() {
           Charges - <span className="orgs-charges">{orgs[1].charges}</span> DAIx
           / sec
         </h4>
-        <button className="paynow" onClick={startStream}>
+        <button className="paynow" onClick={() => startStream()}>
           Pay Now
         </button>
       </div>

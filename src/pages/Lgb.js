@@ -40,6 +40,7 @@ function Lbg() {
       console.log("Please install MetaMask!");
     }
   }
+
   return (
     <div className="single-orgs-page">
       <hr />
@@ -58,7 +59,7 @@ function Lbg() {
           Charges - <span className="orgs-charges">{orgs[2].charges}</span> DAIx
           / sec
         </h4>
-        <button className="paynow" onClick={startStream}>
+        <button className="paynow" onClick={() => startStream()}>
           Pay Now
         </button>
       </div>
