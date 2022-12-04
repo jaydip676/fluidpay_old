@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/home.scss";
 import orgs from "../DynamicComponentsData";
 import { useNavigate } from "react-router-dom";
+import qr1 from "../assets/wap.png";
 
 function Home() {
   const navigate = useNavigate();
@@ -40,14 +41,46 @@ function Home() {
             </div>
           );
         })}
-        <div className="steps">
-          <h2>Test Instructions</h2>
-          div
+      </div>
+      <div className="steps">
+        <h2>Test Instructions</h2>
+        <hr />
+        <div className="steps-one">
+          <div className="left">
+            <h3>Step - 1</h3>
+          </div>
+          <div className="right">
+            <p>Stake ETH on Goerli. You will receive DAIx.</p>
+            <button className="steps-one-btn">Stake</button>
+          </div>
         </div>
-        <div className="footer">
-          <hr />
-          <h2>Hacked at ETHIndia</h2>
+        <hr />
+        <div className="steps-two">
+          <div className="left">
+            <h3>Step - 2</h3>
+          </div>
+          <div className="right">
+            <p>
+              Consider you are entering a premises which charges based on time
+              of use. Scan this QR to start stream.
+            </p>
+            <img src={qr1} alt="QR code" />
+          </div>
         </div>
+        <hr />
+        <div className="steps-three">
+          <div className="left">
+            <h3>Step - 3</h3>
+          </div>
+          <div className="right">
+            <p>You have used the premises. End the stream.</p>
+            <img src={qr1} alt="QR code" />
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <hr />
+        <h2>Hacked at ETHIndia</h2>
       </div>
     </>
   );
