@@ -13,7 +13,8 @@ function Lotd() {
     console.log("getting");
     const platform = "0xbFc4A28D8F1003Bec33f4Fdb7024ad6ad1605AA8";
     const user = "0xcc4091815292B2D3BB3076022Dc72d432B6cAdEb";
-    if (typeof window.ethereum !== "undefined") {
+    if (window.ethereum) {
+      handleEthereum();
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       await provider.send("eth_requestAccounts", []);
       const signer = provider.getSigner();
@@ -30,6 +31,15 @@ function Lotd() {
       console.log(tx);
     }
   };
+
+  function handleEthereum() {
+    const { ethereum } = window;
+    if (ethereum && ethereum.isMetaMask) {
+      console.log("Ethereum successfully detected!");
+    } else {
+      console.log("Please install MetaMask!");
+    }
+  }
 
   return (
     <div className="single-orgs-page">
