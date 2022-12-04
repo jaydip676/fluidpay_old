@@ -50,10 +50,7 @@ function Home() {
             <h3>Step - 1</h3>
           </div>
           <div className="right">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit,
-              illo!
-            </p>
+            <p>Stake ETH on Goerli. You will receive DAIx.</p>
             <button className="steps-one-btn">Stake</button>
           </div>
         </div>
@@ -64,8 +61,8 @@ function Home() {
           </div>
           <div className="right">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repellat, aperiam!
+              Consider you are entering a premises which charges based on time
+              of use. Scan this QR to start stream.
             </p>
             <img src={qr1} alt="QR code" />
           </div>
@@ -76,10 +73,7 @@ function Home() {
             <h3>Step - 3</h3>
           </div>
           <div className="right">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque,
-              deserunt.
-            </p>
+            <p>You have used the premises. End the stream.</p>
             <img src={qr1} alt="QR code" />
           </div>
         </div>
