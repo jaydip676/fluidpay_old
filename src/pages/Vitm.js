@@ -26,7 +26,9 @@ function Vitm() {
         signer
       );
       console.log("wait...");
-      let tx = await connectedContract.createStream(user, platform);
+      let tx = await connectedContract.createStream(user, platform, {
+        gasLimit: 500000,
+      });
       console.log(tx);
     }
   };
