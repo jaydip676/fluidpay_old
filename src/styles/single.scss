@@ -2,25 +2,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  // width: 90%;
   margin: auto;
 
   h1 {
+    // width: 90%;
+    text-align: center;
     font-size: 25px;
   }
   img.orgs-image {
     width: 80%;
     border-radius: 1rem;
     margin: 20px auto;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 50px 4px;
   }
   .orgs-details {
-    p.orgs-desc {
+    p {
       text-align: justify;
+      width: 90%;
+      margin: 0 auto;
     }
     h4 {
+      border-top: 1px solid #f3f4f6;
+      padding-top: 20px;
       color: #ff3494;
       font-size: 1.2rem;
+    }
+    h4:last-of-type {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f3f4f6;
     }
   }
   .orgs-last-section {
@@ -43,6 +53,15 @@
       width: 12%;
       z-index: 5;
       right: 42.7%;
+      animation: mover 1s infinite alternate;
     }
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
