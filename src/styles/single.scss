@@ -17,8 +17,11 @@
     box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 50px 4px;
   }
   .orgs-details {
+    width: 90%;
+    margin: 0 auto;
+
     p {
-      text-align: justify;
+      // text-align: justify;
       width: 90%;
       margin: 0 auto;
     }
@@ -62,6 +65,18 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .single-orgs-page {
+    .orgs-details {
+      p.orgs-address {
+        text-align: center;
+      }
+      p.orgs-desc {
+        text-align: justify;
+      }
+    }
   }
 }
