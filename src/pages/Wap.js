@@ -67,10 +67,10 @@ function Wap() {
       {/* <div className="orgs-qr-code">
         <img src="" alt="qr-code" />
       </div> */}
-      <div className="orgs-last-section">
+      {/* <div className="orgs-last-section">
         <img className="background-image" src={background} alt="orgs_image" />
         <img className="ethlogo-image" src={ethlogo} alt="eth_logo" />
-      </div>
+      </div> */}
     </div>
   );
 }

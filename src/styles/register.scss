@@ -1,0 +1,91 @@
+.register-header {
+  // margin-top: 100px;
+  width: 20%;
+  height: 10vh;
+  padding-top: 1.5vh;
+  border-radius: 1rem;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: -2%;
+  font-weight: 600;
+  color: white;
+  background: #555555;
+
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.register-main {
+  width: 30%;
+  height: 75vh;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20vh;
+  margin-left: 35%;
+  margin-bottom: 10vh;
+  // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+  .register-item-1 {
+    margin-top: 5vh;
+    height: 7vh;
+    width: 15vw;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register-item-2 {
+    height: 7vh;
+    width: 15vw;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register-item-3 {
+    height: 7vh;
+    width: 15vw;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.register-btn {
+  height: 5vh;
+  width: 8vw;
+  border-radius: 10px;
+  background: rgb(255, 136, 193);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 136, 193, 1) 0%,
+    rgba(255, 52, 148, 1) 100%
+  );
+  font-weight: 600;
+  color: white;
+}
+
+.register-featured-image {
+  margin-bottom: 5vh;
+}
+
+.reg-img-cancelbtn {
+  height: 5vh;
+  width: 6vw;
+  border-radius: 10px;
+  background: rgb(255, 136, 193);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 136, 193, 1) 0%,
+    rgba(255, 52, 148, 1) 100%
+  );
+  font-weight: 600;
+  color: white;
+  margin: 10px;
+}

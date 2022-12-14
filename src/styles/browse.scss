@@ -1,0 +1,57 @@
+.browse-header {
+  margin-top: 20vh;
+}
+
+.browse-qr-main {
+  display: flex;
+}
+
+.browse-qr-start {
+  margin: 100px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 10px;
+  padding-bottom: 10vh;
+}
+
+.browse-qr-end {
+  margin: 100px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 10px;
+  padding-bottom: 10vh;
+}
+
+.browse-qr-img {
+  width: 80%;
+}
+
+.browse-qr-header {
+  background: #555555;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  color: #fff;
+  width: 50%;
+  height: 10vh;
+  border-radius: 10px;
+  padding-top: 3.5%;
+  margin-bottom: 10vh;
+  margin-left: 25%;
+  margin-top: -5vh;
+}
+
+.browse-btn {
+  height: 7vh;
+  width: 10vw;
+  border-radius: 10px;
+  background: rgb(255, 136, 193);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 136, 193, 1) 0%,
+    rgba(255, 52, 148, 1) 100%
+  );
+  font-weight: 600;
+  color: white;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}

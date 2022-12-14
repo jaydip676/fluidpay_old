@@ -5,13 +5,18 @@ import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+import Navbar from "./pages/Navbar";
 import Home from "./pages/Home";
+import Explore from "./pages/Explore";
+import Browse from "./pages/Browse";
+import Register from "./pages/Register";
+import Transaction from "./pages/Transaction";
 
 import Vitm from "./pages/Vitm";
 import Lotd from "./pages/Lotd";
 import Lgb from "./pages/Lgb";
 import Wap from "./pages/Wap";
-import logo from "../src/assets/fluid-pay-logo.png";
+
 import LgbEnd from "./pages/LgbEnd";
 import VitmEnd from "./pages/VitmEnd";
 import LotdEnd from "./pages/LotdEnd";
@@ -41,12 +46,8 @@ function App() {
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
         <div className="App">
-          <div className="logo-div">
-            {/* <h1 className="logo-h1">FLUIDPAY</h1> */}
-            <img className="logo" src={logo} alt="logo" />
-          </div>
-          <hr />
           <HashRouter hashType="slash">
+            <Navbar />
             <Routes>
               <Route path="/" exact element={<Home />} />
               <Route
@@ -75,6 +76,14 @@ function App() {
                 path="/wonderla-amusement-park/stream-end"
                 element={<WapEnd />}
               />
+
+              <Route path="/explore" element={<Explore />} />
+
+              <Route path="/browse" element={<Browse />} />
+
+              <Route path="/register" element={<Register />} />
+
+              <Route path="/transaction" element={<Transaction />} />
 
               {/* {orgs.map((item, key) => {
                 return (

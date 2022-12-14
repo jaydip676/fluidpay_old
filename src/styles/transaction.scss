@@ -1,0 +1,237 @@
+.transaction-header {
+  margin-top: 20vh;
+}
+
+.transaction-top {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.transaction-img {
+  height: 10vh;
+  width: 10vw;
+  margin-top: 1vh;
+  border-radius: 50%;
+}
+
+.transaction-top-1 {
+  margin-left: -3vw;
+}
+
+.transaction-top-2 {
+  margin-top: 4vh;
+  color: #1abb3f;
+}
+
+.transaction-mid {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-send-receive {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 10px;
+  width: 50vh;
+  height: 30vh;
+  margin: 5%;
+}
+
+.cloud-main {
+  width: 50%;
+  overflow: hidden;
+}
+
+#clouds {
+  padding: 25vh 0;
+  height: 50vh;
+  //   background: #c9dbe9;
+  //   background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  //   background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  //   background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+  width: 15vw;
+  height: 2vh;
+  background: #731b33;
+
+  //   border-radius: 200px;
+  //   -moz-border-radius: 200px;
+  //   -webkit-border-radius: 200px;
+
+  position: relative;
+}
+
+.cloud:before,
+.cloud:after {
+  //   content: "";
+  position: absolute;
+  background: #fff;
+  width: 10vw;
+  height: 8vh;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+  animation: moveclouds 2s linear infinite;
+  -moz-animation: moveclouds 2s linear infinite;
+  -o-animation: moveclouds 2s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  left: 80px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6; /*opacity proportional to the size*/
+
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  animation: moveclouds 3s linear infinite;
+  -moz-animation: moveclouds 3s linear infinite;
+  -o-animation: moveclouds 3s linear infinite;
+  background: #fbb03b;
+}
+
+.x3 {
+  left: -85px;
+  top: -80px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  animation: moveclouds 1.5s linear infinite;
+  -moz-animation: moveclouds 1.5s linear infinite;
+  -o-animation: moveclouds 1.5s linear infinite;
+}
+
+.x4 {
+  left: 90px;
+  top: -85px;
+
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75; /*opacity proportional to the size*/
+
+  animation: moveclouds 2s linear infinite;
+  -moz-animation: moveclouds 2s linear infinite;
+  -o-animation: moveclouds 2s linear infinite;
+  background: #f79368;
+}
+
+.x5 {
+  left: -70px;
+  top: -70px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  animation: moveclouds 1.5s linear infinite;
+  -moz-animation: moveclouds 1.5s linear infinite;
+  -o-animation: moveclouds 1.5s linear infinite;
+  background: #532441;
+}
+
+@keyframes moveclouds {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@-moz-keyframes moveclouds {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@-o-keyframes moveclouds {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+.transaction-bottom {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10vh;
+}
+
+.transaction-bottom-left {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.transaction-bottom-right {
+  width: 35%;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.transaction-mid-bottom {
+  display: flex;
+  font-size: larger;
+  justify-content: space-between;
+  margin: 0 25% 0 25%;
+}
+
+.transaction-mid-bottom-1 {
+  margin-right: 10px;
+}
+
+.transaction-mid-bottom-2 {
+  margin-right: 10px;
+}
+
+.transaction-mid-bottom-3 {
+  color: grey;
+}
+
+.transaction-bottom-sub-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-bottom-sub-main-1 {
+  color: grey;
+}
