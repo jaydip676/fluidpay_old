@@ -37,7 +37,7 @@ function Register() {
 
   return (
     <>
-      <div>
+      <div className="register-bg">
         <h1 className="register-header">Register</h1>
         <form className="register-main">
           <input

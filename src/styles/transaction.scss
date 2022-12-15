@@ -1,6 +1,18 @@
-.transaction-header {
-  margin-top: 20vh;
+.transcation-main {
+  padding-top: 20vh;
+  height: 170vh;
+  min-height: 180vh;
+  background: rgb(83, 36, 65);
+  background: linear-gradient(
+    270deg,
+    rgba(83, 36, 65, 1) 38%,
+    rgba(115, 27, 51, 1) 100%
+  );
 }
+
+// .transaction-header {
+//   margin-top: 20vh;
+// }
 
 .transaction-top {
   display: flex;
@@ -40,6 +52,7 @@
   width: 50vh;
   height: 30vh;
   margin: 5%;
+  background-color: #ffffd1;
 }
 
 .cloud-main {

@@ -1,3 +1,15 @@
+.register-bg {
+  padding-top: 20vh;
+  height: 110vh;
+  min-height: 120vh;
+  background: rgb(83, 36, 65);
+  background: linear-gradient(
+    270deg,
+    rgba(83, 36, 65, 1) 38%,
+    rgba(115, 27, 51, 1) 100%
+  );
+}
+
 .register-header {
   // margin-top: 100px;
   width: 20%;
@@ -6,10 +18,10 @@
   border-radius: 1rem;
   position: absolute;
   margin-left: 40%;
-  margin-top: -2%;
+  margin-top: 14vh;
   font-weight: 600;
   color: white;
-  background: #555555;
+  background: #f79368;
 
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -30,6 +42,7 @@
   // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  background-color: #ffffd1;
 
   .register-item-1 {
     margin-top: 5vh;
@@ -38,6 +51,7 @@
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
+    background-color: #ffffd1;
   }
 
   .register-item-2 {
@@ -46,6 +60,7 @@
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
+    background-color: #ffffd1;
   }
 
   .register-item-3 {
@@ -54,6 +69,7 @@
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
+    background-color: #ffffd1;
   }
 }
 

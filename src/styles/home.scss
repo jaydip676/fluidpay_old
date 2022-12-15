@@ -1,6 +1,18 @@
-.heading {
-  margin-top: 100px;
+.Explore-main {
+  padding-top: 20vh;
+  height: 110vh;
+  min-height: 120vh;
+  background: rgb(83, 36, 65);
+  background: linear-gradient(
+    270deg,
+    rgba(83, 36, 65, 1) 38%,
+    rgba(115, 27, 51, 1) 100%
+  );
 }
+
+// .heading {
+//   margin-top: 100px;
+// }
 
 // img.logo {
 //   padding-top: 10px;
@@ -32,6 +44,7 @@
     // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
       rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: #ffffd1;
 
     .card-logo {
       display: flex;

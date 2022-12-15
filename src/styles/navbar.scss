@@ -8,6 +8,12 @@
   z-index: 10;
   transition: top 0.6s;
   top: 0;
+  background: rgb(83, 36, 65);
+  background: linear-gradient(
+    270deg,
+    rgba(83, 36, 65, 1) 38%,
+    rgba(115, 27, 51, 1) 100%
+  );
 }
 
 .nav-ham-menu {
@@ -15,8 +21,8 @@
 }
 
 .nav-logo {
-  height: 100px;
-  width: 200px;
+  height: 30px;
+  width: 150px;
 }
 // .nav-links {
 //   // display: grid;
@@ -60,7 +66,7 @@ ul.nav-links {
   font-family: "Noir_regular";
   font-size: 15px;
   font-weight: 900;
-  color: #000;
+  color: #f79368;
   padding: 5px 10px;
   // -webkit-animation: glow 1s ease-in-out infinite alternate;
   // -moz-animation: glow 1s ease-in-out infinite alternate;

@@ -1,5 +1,25 @@
+.browse-main {
+  padding-top: 20vh;
+  height: 170vh;
+  min-height: 180vh;
+  background: rgb(83, 36, 65);
+  background: linear-gradient(
+    270deg,
+    rgba(83, 36, 65, 1) 38%,
+    rgba(115, 27, 51, 1) 100%
+  );
+}
+
 .browse-header {
-  margin-top: 20vh;
+  color: #fbb03b;
+}
+
+.browse-platform-name {
+  color: #fbb03b;
+}
+
+.browse-platform-details {
+  color: #fbb03b;
 }
 
 .browse-qr-main {
@@ -12,6 +32,7 @@
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   border-radius: 10px;
   padding-bottom: 10vh;
+  background-color: #ffffd1;
 }
 
 .browse-qr-end {
@@ -20,6 +41,7 @@
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   border-radius: 10px;
   padding-bottom: 10vh;
+  background-color: #ffffd1;
 }
 
 .browse-qr-img {
@@ -27,7 +49,7 @@
 }
 
 .browse-qr-header {
-  background: #555555;
+  background: #f79368;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   color: #fff;
