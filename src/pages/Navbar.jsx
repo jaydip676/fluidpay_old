@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import MenuIcon from "./MenuIcon";
-import logo from "../assets/fluid-pay-logo.png";
+import logo from "../assets/logo.png";
 import "../styles/navbar.scss";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 import { InjectedConnector } from "wagmi/connectors/injected";

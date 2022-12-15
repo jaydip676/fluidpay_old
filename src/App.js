@@ -6,7 +6,7 @@ import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import Navbar from "./pages/Navbar";
-import Home from "./pages/Home";
+import Landing from "./pages/Landing";
 import Explore from "./pages/Explore";
 import Browse from "./pages/Browse";
 import Register from "./pages/Register";
@@ -49,7 +49,7 @@ function App() {
           <HashRouter hashType="slash">
             <Navbar />
             <Routes>
-              <Route path="/" exact element={<Home />} />
+              <Route path="/" exact element={<Landing />} />
               <Route
                 path="/visvesvaraya-industrial-and-technological-museum"
                 element={<Vitm />}

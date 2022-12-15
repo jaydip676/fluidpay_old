@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/home.scss";
 import orgs from "../DynamicComponentsData";
 import { useNavigate } from "react-router-dom";
-import qr1 from "../assets/wap.png";
+// import qr1 from "../assets/wap.png";
 
 function Home() {
   const navigate = useNavigate();
@@ -42,7 +42,7 @@ function Home() {
           );
         })}
       </div>
-      <div className="steps">
+      {/* <div className="steps">
         <h2>Test Instructions</h2>
         <hr />
         <div className="steps-one">
@@ -81,7 +81,7 @@ function Home() {
       <div className="footer">
         <hr />
         <h2>Hacked at ETHIndia</h2>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -1,8 +1,73 @@
 .home-main {
+  padding-top: 20vh;
+  height: 110vh;
   background: rgb(251, 176, 59);
   background: linear-gradient(
-    27deg,
+    37deg,
     rgba(251, 176, 59, 1) 0%,
-    rgba(115, 27, 51, 1) 35%
+    rgba(115, 27, 51, 1) 23%,
+    rgba(83, 36, 65, 1) 77%
   );
+}
+
+.home-main-img1 {
+  position: absolute;
+  left: 0;
+  height: 40vh;
+  width: 20vw;
+  // margin-top: 50vh;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+.home-main-img2 {
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  height: 80%;
+  margin-top: -40vh;
+}
+
+.home-main-top {
+  font-size: 100px;
+  color: #ffffd1;
+  text-align: left;
+  font-weight: 50;
+  margin-left: 5vw;
+}
+
+.home-main-mid {
+  margin-top: 10vh;
+}
+
+.home-main-mid1 {
+  text-align: left;
+  color: #fbb03b;
+  margin-left: 40%;
+}
+
+.home-main-mid2 {
+  text-align: left;
+  color: #fff;
+  margin-left: 40%;
+  width: 20%;
+}
+
+.home-mid-btn {
+  display: flex;
+  margin-left: 38vw;
+}
+
+.home-main-mid-btn {
+  height: 15vh;
+  width: 15vw;
+  position: absolute;
+}
+
+.home-main-mid-btntxt {
+  z-index: 10;
+  position: relative;
+  margin-top: 4vh;
+  margin-left: 5.7vw;
+  font-size: larger;
 }
