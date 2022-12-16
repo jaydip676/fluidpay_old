@@ -12,14 +12,17 @@
 
 .browse-header {
   color: #fbb03b;
+  font-family: "gilmer_light";
 }
 
 .browse-platform-name {
   color: #fbb03b;
+  font-family: "Quicksand_Regular";
 }
 
 .browse-platform-details {
   color: #fbb03b;
+  font-family: "Quicksand_Regular";
 }
 
 .browse-qr-main {
@@ -60,20 +63,22 @@
   margin-bottom: 10vh;
   margin-left: 25%;
   margin-top: -5vh;
+  font-family: "Quicksand_Bold";
 }
 
 .browse-btn {
-  height: 7vh;
-  width: 10vw;
-  border-radius: 10px;
-  background: rgb(255, 136, 193);
+  margin: auto;
+  background: rgb(251, 176, 59);
   background: linear-gradient(
     90deg,
-    rgba(255, 136, 193, 1) 0%,
-    rgba(255, 52, 148, 1) 100%
+    rgba(251, 176, 59, 1) 0%,
+    rgba(247, 147, 104, 1) 60%
   );
+  padding: 15px 35px;
+  border-radius: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: white;
-  margin-top: 5vh;
   margin-bottom: 10vh;
+  font-family: "Quicksand_Regular";
+  color: #731b33;
 }

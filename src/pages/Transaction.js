@@ -12,10 +12,10 @@ const Transaction = () => {
           <h1 className="transaction-top-1">2244.90217</h1>
           <h2 className="transaction-top-2">USDCx</h2>
         </div>
-        <h4>$2244.89551 USD</h4>
+        <h4 className="transaction-top-3">$2244.89551 USD</h4>
         <div className="transaction-mid">
           <div className="transaction-send-receive">
-            <h3>Sender</h3>
+            <h3 className="transaction-send-receive-header">Sender</h3>
             <div>Account Address</div>
           </div>
           <div className="cloud-main">
@@ -25,19 +25,19 @@ const Transaction = () => {
               <div class="cloud x3"></div>
               <div class="cloud x4"></div>
               <div class="cloud x5"></div>
-              <div class="cloud x1"></div>
-              <div class="cloud x2"></div>
+              <div class="cloud x6"></div>
+              <div class="cloud x7"></div>
             </div>
           </div>
           <div className="transaction-send-receive">
-            <h3>Receiver</h3>
+            <h3 className="transaction-send-receive-header">Receiver</h3>
             <div>Account Address</div>
           </div>
         </div>
         <div className="transaction-mid-bottom">
           <h4 className="transaction-mid-bottom-1">1045.0219452</h4>
           <h4 className="transaction-mid-bottom-2">USDCx</h4>
-          <h4 className="transaction-mid-bottom-3">per month</h4>
+          <h4 className="transaction-mid-bottom-3">Per Month</h4>
         </div>
         <div className="transaction-bottom">
           <div className="transaction-bottom-left">

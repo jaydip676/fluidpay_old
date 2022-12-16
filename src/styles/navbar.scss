@@ -8,12 +8,12 @@
   z-index: 10;
   transition: top 0.6s;
   top: 0;
-  background: rgb(83, 36, 65);
-  background: linear-gradient(
-    270deg,
-    rgba(83, 36, 65, 1) 38%,
-    rgba(115, 27, 51, 1) 100%
-  );
+  // background: rgb(83, 36, 65);
+  // background: linear-gradient(
+  //   270deg,
+  //   rgba(83, 36, 65, 1) 38%,
+  //   rgba(115, 27, 51, 1) 100%
+  // );
 }
 
 .nav-ham-menu {
@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   align-content: center;
-  font-family: "Noir_regular";
+  font-family: "gilmer_light";
 }
 
 a.nav-link {
@@ -58,15 +58,15 @@ ul.nav-links {
   :last-child {
     padding: 0 10px;
     border-right: none;
-    font-family: "Noir_regular";
+    font-family: "gilmer_light";
   }
 }
 
 .navtextstyle {
-  font-family: "Noir_regular";
+  font-family: "gilmer_light";
   font-size: 15px;
   font-weight: 900;
-  color: #f79368;
+  color: #fbb03b;
   padding: 5px 10px;
   // -webkit-animation: glow 1s ease-in-out infinite alternate;
   // -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -95,37 +95,39 @@ ul.nav-links {
 }
 
 .nav-button {
-  width: 145px;
+  width: 100px;
+  height: 30px;
   border-radius: 10px;
   padding: 3px;
-  font-family: "Noir_regular";
+  font-family: "gilmer_light";
   cursor: pointer;
   color: #ffffff;
   border: 0px;
   font-weight: 800;
   animation: login-color-changer 10s ease infinite;
-  background: rgb(255, 136, 193);
+  background: rgb(251, 176, 59);
   background: linear-gradient(
     90deg,
-    rgba(255, 136, 193, 1) 0%,
-    rgba(255, 52, 148, 1) 100%
+    rgba(251, 176, 59, 1) 0%,
+    rgba(247, 147, 104, 1) 60%
   );
 }
 
 .nav-disconnect {
-  width: 180px;
+  width: 100px;
+  height: 30px;
   border-radius: 10px;
   padding: 3px;
-  font-family: "Noir_regular";
+  font-family: "gilmer_light";
   cursor: pointer;
   color: #000;
   border: 0px;
   font-weight: 800;
-  background: rgb(255, 136, 193);
+  background: rgb(251, 176, 59);
   background: linear-gradient(
     90deg,
-    rgba(255, 136, 193, 1) 0%,
-    rgba(255, 52, 148, 1) 100%
+    rgba(251, 176, 59, 1) 0%,
+    rgba(247, 147, 104, 1) 60%
   );
 }
 
@@ -173,7 +175,7 @@ ul.nav-links {
 
     z-index: 200;
     padding: 0 !important;
-    font-family: "Noir_regular";
+    font-family: "gilmer_light";
     display: flex;
     flex-direction: column;
     gap: 20px;

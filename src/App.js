@@ -11,16 +11,18 @@ import Explore from "./pages/Explore";
 import Browse from "./pages/Browse";
 import Register from "./pages/Register";
 import Transaction from "./pages/Transaction";
+import SinglePage from "./pages/SinglePage";
+import orgs from "./DynamicComponentsData";
 
-import Vitm from "./pages/Vitm";
-import Lotd from "./pages/Lotd";
-import Lgb from "./pages/Lgb";
-import Wap from "./pages/Wap";
+// import Vitm from "./pages/Vitm";
+// import Lotd from "./pages/Lotd";
+// import Lgb from "./pages/Lgb";
+// import Wap from "./pages/Wap";
 
-import LgbEnd from "./pages/LgbEnd";
-import VitmEnd from "./pages/VitmEnd";
-import LotdEnd from "./pages/LotdEnd";
-import WapEnd from "./pages/WapEnd";
+// import LgbEnd from "./pages/LgbEnd";
+// import VitmEnd from "./pages/VitmEnd";
+// import LotdEnd from "./pages/LotdEnd";
+// import WapEnd from "./pages/WapEnd";
 
 function App() {
   const { chains, provider } = configureChains(
@@ -50,7 +52,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" exact element={<Landing />} />
-              <Route
+              {/* <Route
                 path="/visvesvaraya-industrial-and-technological-museum"
                 element={<Vitm />}
               />
@@ -75,7 +77,7 @@ function App() {
               <Route
                 path="/wonderla-amusement-park/stream-end"
                 element={<WapEnd />}
-              />
+              /> */}
 
               <Route path="/explore" element={<Explore />} />
 
@@ -85,7 +87,7 @@ function App() {
 
               <Route path="/transaction" element={<Transaction />} />
 
-              {/* {orgs.map((item, key) => {
+              {orgs.map((item, key) => {
                 return (
                   <Route
                     exact
@@ -101,7 +103,7 @@ function App() {
                     }
                   />
                 );
-              })} */}
+              })}
             </Routes>
           </HashRouter>
         </div>

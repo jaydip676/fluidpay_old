@@ -4,11 +4,20 @@
   justify-content: center;
   // width: 90%;
   margin: auto;
+  padding-top: 15vh;
+  background: rgb(83, 36, 65);
+  background: linear-gradient(
+    270deg,
+    rgba(83, 36, 65, 1) 38%,
+    rgba(115, 27, 51, 1) 100%
+  );
 
   h1 {
     // width: 90%;
     text-align: center;
     font-size: 25px;
+    color: #fbb03b;
+    font-family: "gilmer_light";
   }
   img.orgs-image {
     width: 80%;
@@ -19,21 +28,24 @@
   .orgs-details {
     width: 90%;
     margin: 0 auto;
+    color: #ffffd1;
 
     p {
       // text-align: justify;
       width: 90%;
       margin: 0 auto;
+      font-family: "Quicksand_Regular";
     }
     h4 {
-      border-top: 1px solid #f3f4f6;
+      // border-top: 1px solid #f3f4f6;
       padding-top: 20px;
-      color: #ff3494;
+      color: #fbb03b;
       font-size: 1.2rem;
+      font-family: "Quicksand_Bold";
     }
     h4:last-of-type {
       padding-bottom: 20px;
-      border-bottom: 1px solid #f3f4f6;
+      // border-bottom: 1px solid #f3f4f6;
     }
   }
   .orgs-last-section {
