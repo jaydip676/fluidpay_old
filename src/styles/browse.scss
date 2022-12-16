@@ -82,3 +82,39 @@
   font-family: "Quicksand_Regular";
   color: #731b33;
 }
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+  .browse-main {
+    height: auto;
+    min-height: 180vh;
+  }
+
+  .browse-qr-main {
+    display: grid;
+  }
+
+  .browse-qr-start {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15vh;
+  }
+
+  .browse-qr-end {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15vh;
+  }
+
+  .browse-btn {
+    margin-top: 15vh;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
