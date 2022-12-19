@@ -1,7 +1,6 @@
 .browse-main {
   padding-top: 20vh;
-  height: 170vh;
-  min-height: 180vh;
+  height: 100%;
   background: rgb(83, 36, 65);
   background: linear-gradient(
     270deg,
@@ -81,12 +80,43 @@
   margin-bottom: 10vh;
   font-family: "Quicksand_Regular";
   color: #731b33;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .browse-main {
+    height: auto;
+  }
+
+  .browse-qr-main {
+    display: grid;
+  }
+
+  .browse-qr-start {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15vh;
+  }
+
+  .browse-qr-end {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15vh;
+  }
+
+  .browse-btn {
+    margin-top: 15vh;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .browse-qr-header {
+    padding-top: 2%;
+  }
 }
 
 @media (max-width: 767px) {

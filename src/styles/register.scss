@@ -92,23 +92,184 @@
   font-family: "Quicksand_Bold";
   color: #731b33;
   font-size: medium;
+  cursor: pointer;
 }
 
 .register-featured-image {
   margin-bottom: 5vh;
 }
 
-.reg-img-cancelbtn {
-  height: 5vh;
-  width: 6vw;
-  border-radius: 10px;
-  background: rgb(255, 136, 193);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 136, 193, 1) 0%,
-    rgba(255, 52, 148, 1) 100%
-  );
-  font-weight: 600;
-  color: white;
-  margin: 10px;
+// .reg-img-cancelbtn {
+//   height: 5vh;
+//   width: 6vw;
+//   border-radius: 10px;
+//   background: rgb(255, 136, 193);
+//   background: linear-gradient(
+//     90deg,
+//     rgba(255, 136, 193, 1) 0%,
+//     rgba(255, 52, 148, 1) 100%
+//   );
+//   font-weight: 600;
+//   color: white;
+//   margin: 10px;
+// }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .register-header {
+    // margin-top: 100px;
+    width: 15%;
+    height: 8%;
+    padding-top: 0.6vh;
+    margin-left: 42.5%;
+    margin-top: 7vh;
+    font-size: 25px;
+  }
+
+  .register-main {
+    width: 30%;
+    height: 85vh;
+    margin-left: 35%;
+    margin-top: 10vh;
+
+    .register-item-1 {
+      margin-top: 5vh;
+      height: 7vh;
+      width: 20vw;
+    }
+
+    .register-item-2 {
+      margin-top: 2vh;
+      height: 7vh;
+      width: 20vw;
+    }
+
+    .register-item-3 {
+      margin-top: 2vh;
+      height: 7vh;
+      width: 20vw;
+    }
+  }
+
+  .register-btn {
+    height: 7vh;
+    width: 15vw;
+  }
+
+  #Capa_1 {
+    height: 15vh !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .register-header {
+    // margin-top: 100px;
+    width: 30%;
+    padding-top: 1vh;
+    margin-left: 35%;
+    margin-top: 5vh;
+    font-size: x-large;
+  }
+
+  .register-main {
+    width: 50%;
+    height: 85vh;
+    margin-left: 25%;
+    margin-top: 10vh;
+
+    .register-item-1 {
+      margin-top: 5vh;
+      height: 10vh;
+      width: 30vw;
+    }
+
+    .register-item-2 {
+      margin-top: 2vh;
+      height: 10vh;
+      width: 30vw;
+    }
+
+    .register-item-3 {
+      margin-top: 2vh;
+      height: 10vh;
+      width: 30vw;
+    }
+  }
+
+  .register-btn {
+    height: 10vh;
+    width: 30vw;
+  }
+
+  #Capa_1 {
+    height: 15vh !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .register-header {
+    // margin-top: 100px;
+    width: 50%;
+    padding-top: 0;
+    margin-left: 25.5%;
+    margin-top: 5vh;
+  }
+
+  .register-main {
+    width: 80%;
+    height: 80vh;
+    margin-left: 10%;
+    margin-top: 10vh;
+
+    .register-item-1 {
+      margin-top: 5vh;
+      height: 10vh;
+      width: 50vw;
+    }
+
+    .register-item-2 {
+      margin-top: 2vh;
+      height: 10vh;
+      width: 50vw;
+    }
+
+    .register-item-3 {
+      margin-top: 2vh;
+      height: 10vh;
+      width: 50vw;
+    }
+  }
+
+  .register-btn {
+    height: 10vh;
+    width: 50vw;
+    border-radius: 10px;
+    background: rgb(251, 176, 59);
+    background: linear-gradient(
+      90deg,
+      rgba(251, 176, 59, 1) 0%,
+      rgba(247, 147, 104, 1) 60%
+    );
+    font-family: "Quicksand_Bold";
+    color: #731b33;
+    font-size: medium;
+  }
+
+  #Capa_1 {
+    height: 10vh !important;
+  }
+
+  .reg-img-cancelbtn {
+    height: 5vh;
+    width: 6vw;
+    border-radius: 10px;
+    background: rgb(255, 136, 193);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 136, 193, 1) 0%,
+      rgba(255, 52, 148, 1) 100%
+    );
+    font-weight: 600;
+    color: white;
+    margin: 10px;
+  }
 }

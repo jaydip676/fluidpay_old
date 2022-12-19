@@ -68,6 +68,7 @@
   height: 15vh;
   width: 15vw;
   position: absolute;
+  cursor: pointer;
 }
 
 .home-main-mid-btntxt {
@@ -78,12 +79,103 @@
   font-size: larger;
   font-family: "Quicksand_Bold";
   color: #731b33;
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1560px) {
+  .home-main {
+    height: 100%;
+    min-height: 145vh;
+  }
+
+  .home-main-img1 {
+    height: 50vh;
+    width: 25vw;
+  }
+
+  .home-main-img2 {
+    height: 100%;
+  }
+
+  .home-main-mid2 {
+    text-align: left;
+    color: #fff;
+    margin-left: 40%;
+    width: 30%;
+    font-family: "Quicksand_Regular";
+  }
+
+  .home-mid-btn {
+    display: flex;
+    margin-left: 45vw;
+  }
+
+  .home-main-mid-btn {
+    height: 15vh;
+    width: 15vw;
+  }
+
+  .home-main-mid-btntxt {
+    margin-top: 3vh;
+    margin-left: 5.5vw;
+    font-size: large;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .home-main {
+    height: 120vh;
+    min-height: 140vh;
+  }
+
+  .home-main-top {
+    display: flex;
+    font-size: 40px;
+    min-width: 10vw;
+  }
+
+  .home-main-top2 {
+    padding-left: 10px;
+  }
+
+  .home-main-img1 {
+    height: 60vh;
+    width: 40vw;
+  }
+
+  .home-main-img2 {
+    height: 85%;
+    margin-top: 0;
+  }
+
+  .home-main-mid {
+    margin-top: 65vh;
+  }
+
+  .home-main-mid1 {
+    text-align: left;
+    color: #fbb03b;
+    margin-left: 40%;
+  }
+
+  .home-main-mid2 {
+    text-align: left;
+    color: #fff;
+    margin-left: 22%;
+    width: 50%;
+  }
+
+  .home-main-mid-btn {
+    height: 15vh;
+    width: 50vw;
+    margin-left: -15vw;
+  }
+
+  .home-main-mid-btntxt {
+    margin-top: 3.5vh;
+    margin-left: 7vw;
+    font-size: medium;
+  }
 }
 
 @media (max-width: 767px) {
@@ -99,7 +191,7 @@
 
   .home-main-img1 {
     height: 40vh;
-    width: 30vw;
+    width: 40vw;
   }
 
   .home-main-img2 {
@@ -131,8 +223,8 @@
   }
 
   .home-main-mid-btntxt {
-    margin-top: 3vh;
-    margin-left: 12%;
+    margin-top: 3.5vh;
+    margin-left: 7vw;
     font-size: medium;
   }
 }

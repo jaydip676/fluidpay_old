@@ -50,22 +50,24 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
+            <Link to="/register" className="nav-link">
+              <div className="navtextstyle">Register</div>
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link to="/explore" className="nav-link">
               <div className="navtextstyle">Explore</div>
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/browse" className="nav-link">
-              <div className="navtextstyle">Browse</div>
-            </Link>
-          </li>
+
           {connected ? (
             <>
               <li className="nav-item">
-                <Link to="/register" className="nav-link">
-                  <div className="navtextstyle">Register</div>
+                <Link to="/browse" className="nav-link">
+                  <div className="navtextstyle">Browse</div>
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link to="/transaction" className="nav-link">
                   <div className="navtextstyle">Transaction</div>
@@ -115,6 +117,7 @@ function Navbar() {
                   Home
                 </span>
               </li>
+
               <li>
                 <span
                   onClick={() => {
@@ -124,6 +127,17 @@ function Navbar() {
                   Register
                 </span>
               </li>
+
+              <li>
+                <span
+                  onClick={() => {
+                    navigate("/explore");
+                  }}
+                >
+                  Explore
+                </span>
+              </li>
+
               {connected ? (
                 <>
                   <li>
@@ -135,6 +149,17 @@ function Navbar() {
                       Browse
                     </span>
                   </li>
+
+                  <li>
+                    <span
+                      onClick={() => {
+                        navigate("/transaction");
+                      }}
+                    >
+                      Transaction
+                    </span>
+                  </li>
+
                   <li>
                     <button
                       className="nav-button"

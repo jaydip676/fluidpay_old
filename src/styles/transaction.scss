@@ -1,7 +1,6 @@
 .transcation-main {
   padding-top: 20vh;
-  height: 170vh;
-  min-height: 180vh;
+  height: 100%;
   background: rgb(83, 36, 65);
   background: linear-gradient(
     270deg,
@@ -310,4 +309,172 @@
 .transaction-bottom-sub-main-2 {
   color: #fbb03b;
   font-family: "Quicksand_Regular";
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .transcation-main {
+    padding-top: 20vh;
+    height: 150vh;
+    min-height: 200vh;
+    background: rgb(83, 36, 65);
+    background: linear-gradient(
+      270deg,
+      rgba(83, 36, 65, 1) 38%,
+      rgba(115, 27, 51, 1) 100%
+    );
+  }
+
+  .transaction-top {
+    width: 90%;
+  }
+
+  .transaction-img {
+    margin-top: 2vh;
+  }
+
+  .transaction-top-1 {
+    font-size: x-large;
+  }
+
+  .transaction-top-2 {
+    font-size: larger;
+  }
+
+  .transaction-top-3 {
+    font-size: larger;
+  }
+
+  .transaction-send-receive {
+    height: 25vh;
+  }
+
+  .transaction-send-receive-header {
+    background-color: #f79368;
+    height: 30%;
+    width: 70%;
+    padding-top: 2px;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: -2.5vh;
+    font-size: medium;
+  }
+
+  .cloud {
+    margin-top: 1vh;
+  }
+
+  .transaction-bottom {
+    padding: 10vh;
+  }
+
+  .transaction-mid-bottom {
+    margin-left: 25%;
+  }
+
+  .transaction-bottom-left {
+    width: 100%;
+  }
+
+  .transaction-bottom-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .transaction-bottom-sub-main {
+    margin: -15px;
+  }
+
+  .transaction-bottom-sub-main-1 {
+    padding: 10px;
+  }
+
+  .transaction-bottom-sub-main-2 {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .transcation-main {
+    padding-top: 20vh;
+    height: 200vh;
+    min-height: 265vh;
+    background: rgb(83, 36, 65);
+    background: linear-gradient(
+      270deg,
+      rgba(83, 36, 65, 1) 38%,
+      rgba(115, 27, 51, 1) 100%
+    );
+  }
+
+  .transaction-top {
+    width: 90%;
+  }
+
+  .transaction-img {
+    margin-top: 2vh;
+  }
+
+  .transaction-top-1 {
+    font-size: x-large;
+  }
+
+  .transaction-top-2 {
+    font-size: larger;
+  }
+
+  .transaction-top-3 {
+    font-size: larger;
+  }
+
+  .transaction-send-receive {
+    height: 25vh;
+  }
+
+  .transaction-send-receive-header {
+    background-color: #f79368;
+    height: 30%;
+    width: 70%;
+    padding-top: 2px;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: -2.5vh;
+    font-size: medium;
+  }
+
+  .cloud {
+    margin-top: 1vh;
+  }
+
+  .transaction-bottom {
+    display: grid;
+    padding: 10vh;
+  }
+
+  .transaction-mid-bottom {
+    margin-left: 15%;
+  }
+
+  .transaction-bottom-left {
+    width: 100%;
+  }
+
+  .transaction-bottom-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .transaction-bottom-sub-main {
+    margin: -15px;
+  }
+
+  .transaction-bottom-sub-main-1 {
+    padding: 10px;
+  }
+
+  .transaction-bottom-sub-main-2 {
+    padding: 10px;
+  }
 }
