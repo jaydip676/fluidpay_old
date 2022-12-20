@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/landing.scss";
 import HomeImg1 from "../assets/1.png";
 import HomeImg2 from "../assets/2.1.png";
-import Btn from "../assets/Asset2.svg";
+// import Btn from "../assets/Asset2.svg";
 
 function Landing() {
   return (
@@ -20,10 +20,8 @@ function Landing() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </div>
-          <div className="home-mid-btn">
-            <img src={Btn} className="home-main-mid-btn" />
-            <div className="home-main-mid-btntxt">Button</div>
-          </div>
+
+          <button className="home-mid-btn">Button</button>
         </div>
       </div>
     </>

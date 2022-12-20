@@ -60,27 +60,39 @@
 }
 
 .home-mid-btn {
-  display: flex;
-  margin-left: 38vw;
-}
-
-.home-main-mid-btn {
-  height: 15vh;
-  width: 15vw;
-  position: absolute;
-  cursor: pointer;
-}
-
-.home-main-mid-btntxt {
-  z-index: 10;
-  position: relative;
-  margin-top: 4.5vh;
-  margin-left: 5.7vw;
-  font-size: larger;
+  height: 7vh;
+  width: 10vw;
+  border-radius: 30px;
+  background: rgb(251, 176, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 176, 59, 1) 0%,
+    rgba(247, 147, 104, 1) 60%
+  );
   font-family: "Quicksand_Bold";
   color: #731b33;
+  font-size: medium;
   cursor: pointer;
+  margin-top: 10px;
 }
+
+// .home-main-mid-btn {
+//   height: 15vh;
+//   width: 15vw;
+//   position: absolute;
+//   cursor: pointer;
+// }
+
+// .home-main-mid-btntxt {
+//   z-index: 10;
+//   position: relative;
+//   margin-top: 4.5vh;
+//   margin-left: 5.7vw;
+//   font-size: larger;
+//   font-family: "Quicksand_Bold";
+//   color: #731b33;
+//   cursor: pointer;
+// }
 
 @media only screen and (min-width: 1024px) and (max-width: 1560px) {
   .home-main {
@@ -105,10 +117,10 @@
     font-family: "Quicksand_Regular";
   }
 
-  .home-mid-btn {
-    display: flex;
-    margin-left: 45vw;
-  }
+  // .home-mid-btn {
+  // display: flex;
+  // margin-left: 45vw;
+  // }
 
   .home-main-mid-btn {
     height: 15vh;
@@ -216,15 +228,16 @@
     width: 50%;
   }
 
-  .home-main-mid-btn {
-    height: 15vh;
-    width: 50vw;
-    margin-left: -12vw;
+  .home-mid-btn {
+    height: 10vh;
+    width: 25vw;
+    font-size: medium;
+    margin-top: 10px;
   }
 
-  .home-main-mid-btntxt {
-    margin-top: 3.5vh;
-    margin-left: 7vw;
-    font-size: medium;
-  }
+  // .home-main-mid-btntxt {
+  //   margin-top: 3.5vh;
+  //   margin-left: 7vw;
+  //   font-size: medium;
+  // }
 }
