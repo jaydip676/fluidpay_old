@@ -23,14 +23,19 @@ function FetchData() {
   //function to fetch data
   const fetch = async () => {
     platformsAddresses_array = await connectedContract.getAllPlatformsAddress();
+    console.log("platfroms addresses");
     console.log(platformsAddresses_array);
 
+    let metadata = [];
     for (let i = 0; i < platformsAddresses_array.length; i++) {
-      let metadata = await connectedContract.getPlatformData(
+      let metadata_tx = await connectedContract.getPlatformData(
         platformsAddresses_array[i]
       );
-      console.log(metadata);
+      metadata.push(metadata_tx);
+      //   console.log(metadata_tx);
     }
+    console.log("Platforms's metadata");
+    console.log(metadata);
   };
   return (
     <div>
