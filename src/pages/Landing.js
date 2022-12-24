@@ -2,9 +2,13 @@ import React from "react";
 import "../styles/landing.scss";
 import HomeImg1 from "../assets/1.png";
 import HomeImg2 from "../assets/2.1.png";
+import { useNavigate } from "react-router-dom";
+
 // import Btn from "../assets/Asset2.svg";
 
 function Landing() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="home-main">
@@ -22,6 +26,9 @@ function Landing() {
           </div>
 
           <button className="home-mid-btn">Button</button>
+          <button onClick={() => navigate("/fetch-data")}>
+            Route another page
+          </button>
         </div>
       </div>
     </>

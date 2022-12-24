@@ -13,6 +13,7 @@ import Register from "./pages/Register";
 import Transaction from "./pages/Transaction";
 import SinglePage from "./pages/SinglePage";
 import orgs from "./DynamicComponentsData";
+import FetchData from "./pages/FetchData";
 
 function App() {
   const { chains, provider } = configureChains(
@@ -76,6 +77,7 @@ function App() {
               <Route path="/register" element={<Register />} />
 
               <Route path="/transaction" element={<Transaction />} />
+              <Route path="/fetch-data" element={<FetchData />} />
 
               {orgs.map((item, key) => {
                 return (
