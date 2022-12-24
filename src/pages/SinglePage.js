@@ -28,7 +28,7 @@ function SinglePage({ title, desc, OrgsAddress, charges, image }) {
       console.log(ethx.address);
       const createFlowOperation = sf.cfaV1.createFlow({
         flowRate: "1000",
-        sender: "0xcc920c851327AF767b4bf770e3b2C2ea50B90fde",
+        sender: address,
         receiver: "0xbFc4A28D8F1003Bec33f4Fdb7024ad6ad1605AA8",
         superToken: ethx.address,
         // userData?: string

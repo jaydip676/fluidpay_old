@@ -35,7 +35,7 @@
 
 let orgs = [
   {
-    name: "Visvesvaraya Industrial and Technological Museum",
+    name: "Visvesvaraya lol Industrial and Technological Museum",
     description:
       "Visvesvaraya Museum is fun for children and adults. It houses a treasure trove of machines and artifacts related to science and technology. Its interactive exhibits make this a great place for children to develop a love for science. There are exhibition Halls on Engines, Electricity, Fun Science, Space, Biotechnology & Electronics. Animated dinosaurs,life-size model of Wright Brothers' flyer and Steam locomotive are other attractions.There are interesting shows like 'Science on a sphere', 'Taramandal', '3d film show' and 'Science show' held at regular intervals. The 'Science for Kids' gallery is the new addition to the Museum. This is a place designed for tiny tots to play unhindered and engage with science.",
     address:
