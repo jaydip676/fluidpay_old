@@ -3,106 +3,38 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_platform",
-        "type": "address"
-      }
-    ],
-    "name": "createStream",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_platform",
-        "type": "address"
-      }
-    ],
-    "name": "deleteStream",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
         "name": "_platform",
         "type": "address"
       },
       {
         "internalType": "string",
-        "name": "_name",
+        "name": "_platformName",
         "type": "string"
       },
       {
-        "internalType": "int96",
-        "name": "_persecond",
-        "type": "int96"
-      }
-    ],
-    "name": "registerPlatform",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
+        "internalType": "string",
+        "name": "_platformImage",
+        "type": "string"
+      },
       {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
+        "internalType": "string",
+        "name": "_platformDescription",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_placeAddress",
+        "type": "string"
       },
       {
         "internalType": "uint256",
-        "name": "_amount",
+        "name": "_platformChargesPerSecond",
         "type": "uint256"
       }
     ],
-    "name": "stake",
+    "name": "addPlatform",
     "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "contract ISuperfluid",
-        "name": "_host",
-        "type": "address"
-      },
-      {
-        "internalType": "contract ISuperToken",
-        "name": "_goerliDaiX",
-        "type": "address"
-      }
-    ],
     "stateMutability": "nonpayable",
-    "type": "constructor"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      }
-    ],
-    "name": "withdraw",
-    "outputs": [],
-    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -113,35 +45,36 @@
         "type": "address"
       }
     ],
-    "name": "addressToPlatform",
+    "name": "addressToPlatformMapping",
     "outputs": [
       {
+        "internalType": "address",
+        "name": "platformAddress",
+        "type": "address"
+      },
+      {
         "internalType": "string",
-        "name": "name",
+        "name": "platformName",
         "type": "string"
       },
       {
-        "internalType": "int96",
-        "name": "perSecond",
-        "type": "int96"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
+        "internalType": "string",
+        "name": "platformImage",
+        "type": "string"
+      },
       {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "name": "addressToUser",
-    "outputs": [
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "placeAddress",
+        "type": "string"
+      },
       {
         "internalType": "uint256",
-        "name": "amount_staked",
+        "name": "platformChargesPerSecond",
         "type": "uint256"
       }
     ],
@@ -150,17 +83,12 @@
   },
   {
     "inputs": [],
-    "name": "cfaV1",
+    "name": "getAllPlatformsAddress",
     "outputs": [
       {
-        "internalType": "contract ISuperfluid",
-        "name": "host",
-        "type": "address"
-      },
-      {
-        "internalType": "contract IConstantFlowAgreementV1",
-        "name": "cfa",
-        "type": "address"
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
       }
     ],
     "stateMutability": "view",
@@ -170,48 +98,48 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "_platformAddress",
+        "name": "_platform",
         "type": "address"
       }
     ],
-    "name": "getPlaformPrice",
+    "name": "getPlatformData",
     "outputs": [
       {
-        "internalType": "int96",
+        "components": [
+          {
+            "internalType": "address",
+            "name": "platformAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "platformName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "platformImage",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "placeAddress",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "platformChargesPerSecond",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct FluidPay.Platform",
         "name": "",
-        "type": "int96"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "goerliDaiX",
-    "outputs": [
-      {
-        "internalType": "contract ISuperToken",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "name": "isPlatformAdded",
-    "outputs": [
-      {
-        "internalType": "bool",
-        "name": "",
-        "type": "bool"
+        "type": "tuple"
       }
     ],
     "stateMutability": "view",
@@ -231,126 +159,6 @@
         "internalType": "address",
         "name": "",
         "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_platform",
-        "type": "address"
-      }
-    ],
-    "name": "streamEndTime",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_platform",
-        "type": "address"
-      }
-    ],
-    "name": "streamstartTime",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_user",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "_platform",
-        "type": "address"
-      }
-    ],
-    "name": "timeBeenStreamed",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "name": "userToPlatformEndTime",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      },
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "name": "userToPlatformStartTime",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",

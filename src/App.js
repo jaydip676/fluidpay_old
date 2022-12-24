@@ -14,16 +14,6 @@ import Transaction from "./pages/Transaction";
 import SinglePage from "./pages/SinglePage";
 import orgs from "./DynamicComponentsData";
 
-// import Vitm from "./pages/Vitm";
-// import Lotd from "./pages/Lotd";
-// import Lgb from "./pages/Lgb";
-// import Wap from "./pages/Wap";
-
-// import LgbEnd from "./pages/LgbEnd";
-// import VitmEnd from "./pages/VitmEnd";
-// import LotdEnd from "./pages/LotdEnd";
-// import WapEnd from "./pages/WapEnd";
-
 function App() {
   const { chains, provider } = configureChains(
     [chain.goerli, chain.polygonMumbai],
