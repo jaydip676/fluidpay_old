@@ -1,33 +1,59 @@
 import React from "react";
 import "../styles/single.scss";
 import { ethers } from "ethers";
-import quickPay_abi from "../artifacts/fluidpay.json";
+import CONTRACT_ADDRESS from "../config";
+import {
+  useProvider,
+  useSigner,
+  useAccount,
+  useNetwork,
+  useContract,
+} from "wagmi";
+import { Framework } from "@superfluid-finance/sdk-core";
 
 function SinglePage({ title, desc, OrgsAddress, charges, image }) {
-  const CONTRACT_ADDRESS = "0x25f4e7912eDbA1C47C63B6BA4Ac14Eb7dB876954";
-
+  const { address } = useAccount();
+  const { chain } = useNetwork();
+  const provider = useProvider();
+  const { data: signer } = useSigner();
   const startStream = async () => {
-    console.log("getting");
-    const platform = "0xbFc4A28D8F1003Bec33f4Fdb7024ad6ad1605AA8";
-    const user = "0xcc4091815292B2D3BB3076022Dc72d432B6cAdEb";
-    if (window.ethereum) {
-      handleEthereum();
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      await provider.send("eth_requestAccounts", []);
-      const signer = provider.getSigner();
-      console.log("inside id");
-      console.log(quickPay_abi);
+    console.log("starting the stream...");
+    const sf = await Framework.create({
+      chainId: 5,
+      provider: provider,
+    });
 
-      const connectedContract = new ethers.Contract(
-        CONTRACT_ADDRESS,
-        quickPay_abi,
-        signer
-      );
-      console.log("wait...");
-      let tx = await connectedContract.createStream(user, platform, {
-        gasLimit: 500000,
+    try {
+      const ethx = await sf.loadSuperToken("ETHx");
+      console.log(ethx.address);
+      const createFlowOperation = sf.cfaV1.createFlow({
+        flowRate: "1000",
+        sender: "0xcc920c851327AF767b4bf770e3b2C2ea50B90fde",
+        receiver: "0xbFc4A28D8F1003Bec33f4Fdb7024ad6ad1605AA8",
+        superToken: ethx.address,
+        // userData?: string
       });
-      console.log(tx);
+
+      console.log("Creating your stream...");
+
+      const result = await createFlowOperation.exec(signer);
+      console.log(result);
+
+      console.log(
+        `Congrats - you've just created a money stream!
+        View Your Stream At: https://app.superfluid.finance/dashboard/0xbFc4A28D8F1003Bec33f4Fdb7024ad6ad1605AA8
+        Network: Goerli
+        Super Token: DAIx
+        Sender: 0xDCB45e4f6762C3D7C61a00e96Fb94ADb7Cf27721
+        
+        FlowRate: 100
+        `
+      );
+    } catch (error) {
+      console.log(
+        "Hmmm, your transaction threw an error. Make sure that this stream does not already exist, and that you've entered a valid Ethereum address!"
+      );
+      console.error(error);
     }
   };
 
