@@ -15,7 +15,7 @@ function Navbar() {
   const { disconnect } = useDisconnect();
 
   // const [open, setOpen] = useState(false);
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
   const [connected, setConnection] = useState(false);
 
   const connectWallet = () => {
@@ -112,6 +112,7 @@ function Navbar() {
                 <span
                   onClick={() => {
                     navigate("/");
+                    setMenu(!menu);
                   }}
                 >
                   Home
@@ -122,6 +123,7 @@ function Navbar() {
                 <span
                   onClick={() => {
                     navigate("/register");
+                    setMenu(!menu);
                   }}
                 >
                   Register
@@ -132,6 +134,7 @@ function Navbar() {
                 <span
                   onClick={() => {
                     navigate("/explore");
+                    setMenu(!menu);
                   }}
                 >
                   Explore
@@ -144,6 +147,7 @@ function Navbar() {
                     <span
                       onClick={() => {
                         navigate("/browse");
+                        setMenu(!menu);
                       }}
                     >
                       Browse
@@ -154,6 +158,7 @@ function Navbar() {
                     <span
                       onClick={() => {
                         navigate("/transaction");
+                        setMenu(!menu);
                       }}
                     >
                       Transaction

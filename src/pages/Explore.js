@@ -1,23 +1,88 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/home.scss";
 import orgs from "../DynamicComponentsData";
 import { useNavigate } from "react-router-dom";
 // import qr1 from "../assets/wap.png";
+import { metadata } from "./Landing";
+import fluidPay_api from "../artifacts/fluidPay.json";
+import { CONTRACT_ADDRESS } from "../config";
+import { useContract, useProvider, useSigner } from "wagmi";
 
 function Home() {
+  const [loading, setLoading] = useState(true);
+  const provider = useProvider();
+  const { data: signer } = useSigner();
+  const dataFetchedRef = useRef(false);
   const navigate = useNavigate();
+  const connectedContract = useContract({
+    address: CONTRACT_ADDRESS,
+    abi: fluidPay_api,
+    signerOrProvider: provider,
+  });
+  let platformsAddresses_array = [];
+
+  useEffect(() => {
+    if (dataFetchedRef.current) return;
+    dataFetchedRef.current = true;
+
+    //function to fetch data
+    const fetch = async () => {
+      console.log("inside fetch");
+      platformsAddresses_array =
+        await connectedContract.getAllPlatformsAddress();
+      console.log("platfroms addresses");
+      console.log(platformsAddresses_array);
+
+      for (let i = 0; i < platformsAddresses_array.length; i++) {
+        let metadata_tx = await connectedContract.getPlatformData(
+          platformsAddresses_array[i]
+        );
+        // metadata.push(metadata_tx);
+        if (platformsAddresses_array.length > metadata.length) {
+          metadata.push({
+            address: metadata_tx[0],
+            name: metadata_tx[1],
+            image: metadata_tx[2],
+            description: metadata_tx[3],
+            ph_address: metadata_tx[4],
+            charges: parseInt(metadata_tx[5]),
+          });
+        }
+
+        console.log(parseInt(metadata_tx[5]));
+        //   console.log(metadata_tx);
+      }
+      console.log("Platforms's metadata");
+      console.log(metadata);
+      setLoading(false);
+    };
+    fetch();
+    return () => {
+      dataFetchedRef.current = true;
+    };
+  }, []);
+
+  if (loading) return <div>loading...</div>;
   return (
     <>
       <div className="Explore-main">
         <h2 className="heading">Available Platforms</h2>
         <div className="card-main">
-          {orgs.map((item, key) => {
+          {metadata.map((item, key) => {
             return (
               <div
                 className="card"
                 key={key}
                 onClick={() => {
-                  navigate(`${item.route}`);
+                  navigate(`/organization/${item.address}`, {
+                    state: {
+                      name: item.name,
+                      image: item.image,
+                      address: item.ph_address,
+                      desc: item.description,
+                      charges: item.charges,
+                    },
+                  });
                 }}
               >
                 <div className="card-logo">
@@ -36,7 +101,7 @@ function Home() {
                     <p>{item.description}</p>
                   </div>
                   <p className="card-charges">
-                    Charges - <span>0.000001</span> DAIx / sec
+                    Charges - <span>{item.charges}</span> ETHx / sec
                   </p>
                 </div>
               </div>

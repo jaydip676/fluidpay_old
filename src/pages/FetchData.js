@@ -8,6 +8,7 @@ import {
 } from "wagmi";
 import { CONTRACT_ADDRESS } from "../config";
 import fluidPay_api from "../artifacts/fluidPay.json";
+import { ethers } from "ethers";
 
 function FetchData() {
   const { address } = useAccount();
@@ -17,8 +18,13 @@ function FetchData() {
   const connectedContract = useContract({
     address: CONTRACT_ADDRESS,
     abi: fluidPay_api,
-    signerOrProvider: signer,
+    signerOrProvider: provider,
   });
+  // const connectedContract = new ethers.Contract(
+  //   CONTRACT_ADDRESS,
+  //   fluidPay_api,
+  //   provider
+  // );
   let platformsAddresses_array = [];
   //function to fetch data
   const fetch = async () => {

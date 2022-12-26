@@ -32,6 +32,13 @@
 //   }, []);
 //   return <></>;
 // }
+import { metadata } from "./pages/Landing";
+
+let arr = [];
+
+metadata.map((item, key) => {
+  arr.push(item);
+});
 
 let orgs = [
   {

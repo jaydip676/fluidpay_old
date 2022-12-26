@@ -1,10 +1,20 @@
+import { useEffect, useRef } from "react";
 import React from "react";
 import "../styles/landing.scss";
 import HomeImg1 from "../assets/1.png";
 import HomeImg2 from "../assets/2.1.png";
 import { useNavigate } from "react-router-dom";
+import {
+  useProvider,
+  useSigner,
+  useAccount,
+  useNetwork,
+  useContract,
+} from "wagmi";
 
 // import Btn from "../assets/Asset2.svg";
+
+export let metadata = [];
 
 function Landing() {
   const navigate = useNavigate();

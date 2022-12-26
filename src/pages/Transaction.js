@@ -8,7 +8,7 @@ const Transaction = () => {
       <div className="transcation-main">
         <h2 className="transaction-header">Total Amount Streamed</h2>
         <div className="transaction-top">
-          <img className="transaction-img" src={USDC} />
+          <img className="transaction-img" src={USDC} alt="trasaction" />
           <h1 className="transaction-top-1">2244.90217</h1>
           <h2 className="transaction-top-2">USDCx</h2>
         </div>
