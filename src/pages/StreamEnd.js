@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import fluidPay_api from "../artifacts/fluidPay.json";
+import fluidPay_api from "../artifacts/fluidpay.json";
 import { CONTRACT_ADDRESS } from "../config";
 import { useContract, useProvider, useSigner } from "wagmi";
 import React, { useEffect, useRef, useState } from "react";

@@ -4,7 +4,7 @@ import orgs from "../DynamicComponentsData";
 import { useNavigate } from "react-router-dom";
 // import qr1 from "../assets/wap.png";
 import { metadata } from "./Landing";
-import fluidPay_api from "../artifacts/fluidPay.json";
+import fluidPay_api from "../artifacts/fluidpay.json";
 import { CONTRACT_ADDRESS } from "../config";
 import { useContract, useProvider, useSigner } from "wagmi";
 

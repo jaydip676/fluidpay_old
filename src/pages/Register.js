@@ -10,7 +10,7 @@ import {
   useNetwork,
   useContract,
 } from "wagmi";
-import fluidPay_api from "../artifacts/fluidPay.json";
+import fluidPay_api from "../artifacts/fluidpay.json";
 
 function Register() {
   console.log(CONTRACT_ADDRESS);

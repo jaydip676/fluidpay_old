@@ -10,7 +10,7 @@ import {
   useContract,
 } from "wagmi";
 import { Framework } from "@superfluid-finance/sdk-core";
-import fluidPay_api from "../artifacts/fluidPay.json";
+import fluidPay_api from "../artifacts/fluidpay.json";
 import { useLocation, useParams } from "react-router-dom";
 
 function SinglePage() {
